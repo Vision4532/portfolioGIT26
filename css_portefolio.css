@@ -1,0 +1,37 @@
+body {
+    background-color: antiquewhite;
+    font-size: 20px;
+}
+
+header {
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+}
+#photo_moi{
+    border-radius: 25px;
+    height: auto;
+    width:auto ;
+}
+nav{
+
+    display: flex;
+    justify-content: space-around;
+    font-size: 45px;
+    background-color:black ;
+    
+}
+nav a:hover {
+    background-color: rgb(19, 187, 187);
+    color: rgb(211, 210, 210);
+}
+
+.autre_page {
+    text-decoration-line: none;
+    flex-wrap: wrap;
+    color: aliceblue;
+}
+#image_arcade{
+    height: 20em;
+    width: 10em;
+}

@@ -1,0 +1,28 @@
+body {
+    background-color: antiquewhite;
+}
+
+header {
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+}
+#photo_moi{
+    border-radius: 25px;
+    height: auto;
+    width:auto ;
+}
+nav{
+    display: flex;
+    
+    font-size: 50px;
+}
+nav a:hover {
+    background-color: rgb(2, 88, 88);
+}
+
+.autre_page {
+    color: black;
+    text-decoration-line: none;
+    flex-wrap: wrap;
+}
