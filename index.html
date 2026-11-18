@@ -1,46 +1,251 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
-</style>
-    <link rel="stylesheet" href="css_portefolio.css"/>
-    <title>Portefolio Célestin Petit</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Célestin Petit, étudiant en BTS SIO.">
+  <title>Portfolio | Célestin Petit</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Portefolio Célestin Petit</h1>
-        
-    </header>
-    
-    <nav>
-        
-       <a href="index.html" class="autre_page">présentation </a>
-       <a href="diplome.html" class="autre_page">mes Diplome </a>
-       <a href="me_contacter.html" class="autre_page">contact </a>
-        <a href="mes_projet.html" class="autre_page">mes projet informatique </a>
-        <a href="cv_lettremotivation.html" class="autre_page">cv et lettre de motivation</a>
-        
+  <!-- BARRE DE NAVIGATION : modifie les intitulés si besoin, mais garde les liens #... -->
+  <header class="site-header">
+    <a class="logo" href="#accueil">Célestin Petit<span>.</span></a>
+    <nav aria-label="Navigation principale">
+      <a href="#profil">À propos</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#competences">Compétences</a>
+      <a href="#certifications">Certifications</a>\n      <a href="#projets">Projets</a>
+      <a href="#documents">Documents</a>
+      <a href="#contact">Contact</a>
     </nav>
+  </header>
 
-    <main>
-        <h3>Bonjour je me nome Célestin Petit</h3>
-        <p>j'ai 18ans je suis en premiére anée de BTS SIO au campus de saint aspais. sur cette page je ferait ma présentation et le lien que j'ai avec l'informatique
-            <br> j'ai toujour été curieux est l'informatique m'intrigait, dès plus petit je n'araitai pas de remaitre en question le monde est les chose que l'on m'ensaignai
-            car je me demande comment sa fonctionne. <br> <br>
-            j'ai déjat éffectuer de multiple stage dans le service informatique de divers entreprise
-        </p>
-    </main>
+  <main>
+    <!-- ACCUEIL : remplace le texte entre crochets par ta présentation courte -->
+    <section class="hero" id="accueil">
+      <div class="hero-content">
+        <p class="eyebrow">PORTFOLIO • BTS SIO SISR</p>
+        <h1>Bonjour, moi c’est<br><span>Célestin Petit</span></h1>
+        <p class="hero-intro">Je me nome Célestin Petit. Étudiant en BTS SIO, option SISR plus présisément en 2e année, je développe mes compétences en administration des réseaux,
+           administration des systèmes et maintenance informatique. Je recherche un stage afin de mettre mes connaissances en pratique et de découvrir 
+           le fonctionnement d’un environnement informatique professionnel.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projets">Découvrir mes projets</a>
+          <a class="button secondary" href="#contact">Me contacter</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <!-- Tu peux remplacer ce bloc par une photo : <img src="images/portrait.jpg" alt="Portrait de Célestin Petit"> -->
+        <img class="portrait" src="portrait.jpg" alt="Photo de présentation de Célestin Petit">
+        <p class="hero-card-name">Célestin Petit</p>
+        <p class="muted">Étudiant en BTS SIO</p>
+        <span class="status">À la recherche d’un stage</span>
+      </div>
+    </section>
 
+    <!-- PRESENTATION PERSONNELLE -->
+    <section class="section" id="profil">
+      <div class="section-heading">
+        <p class="eyebrow">01 • QUI SUIS-JE ?</p>
+        <h2>À propos de moi</h2>
+      </div>
+      <div class="text-panel">
+        <p>Je m'appelle Célestin Petit et je suis étudiant en BTS SIO, option SISR. J'ai choisi de m'orienter vers l'informatique car c'est un domaine qui me passionne de manière générale. J'aime comprendre comment les systèmes et les technologies fonctionnent.</p>
+        <p>Les domaines qui m'intéressent particulièrement sont l'administration des réseaux, l'administration des systèmes et la maintenance informatique. À l'issue de mon BTS, j'aimerais m'orienter vers un poste d'administrateur systèmes et réseaux ou de technicien informatique.</p>
+      </div>
+    </section>
 
+    <!-- PARCOURS PROFESSIONNEL ET SCOLAIRE -->
+    <section class="section" id="parcours">
+      <div class="section-heading">
+        <p class="eyebrow">02 • MON PARCOURS</p>
+        <h2>Parcours professionnel</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <span class="timeline-date">[2025 – 2027]</span>
+          <div>
+            <h3>BTS Services Informatiques aux Organisations</h3>
+            <p class="muted">Campus Saint Aspais • Soignolles-en-Brie</p>
+            <p>Formation orientée vers l'administration des systèmes et des réseaux, la gestion des infrastructures et la sécurité informatique.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <span class="timeline-date">2022 à 2025</span>
+          <div>
+            <h3>Bac Pro SN</h3>
+            <p class="muted">établisement Saint-Aspait Melun</p>
+            
+          </div>
+        </article>
+        <!-- Duplique un article timeline-item pour ajouter une expérience -->
+      </div>
+    </section>
 
-    <footer>
-        <a>pour plus d'information consernant l'établisement dans le quelle j'était veulier cliquer sur le lien suivant</a>
-        <a href="https://institutionsaintaspais.fr/">vers le site de l'établisement</a><br>
-        <a>pour en aprandre plus sur ma formation </a>
-        <a href="https://institutionsaintaspais.fr/formations/bts-services-informatiques-aux-organisations-option-slam-et-sisr/">BTS SIO</a>
-    </footer>
+    <!-- COMPETENCES TECHNIQUES -->
+    <section class="section" id="competences">
+      <div class="section-heading">
+        <p class="eyebrow">03 • SAVOIR-FAIRE</p>
+        <h2>Compétences techniques</h2>
+        <p class="section-lead">lors de ma formation on travaille soit sur cisco packet tracer même si la plus part du temps on travaille sur du matérielle phisique. j'ai de l'expérience avec les VM linux divers fonction de serveur comme TFTP DHCP et autre</p>
+      </div>
+      <div class="cards-grid">
+        <article class="info-card">
+          <h3>Réseaux & systèmes</h3>
+          <p>Cisco (routeurs et commutateurs), Packet Tracer et notions de configuration réseau. donc les VLAN routage interVLAN DHCP les route et encore d'autre chose</p>
+          
+        </article>
+        <article class="info-card">
+          <h3>Développement</h3>
+          <p>HTML, CSS, Python</p>
+          <span class="tag">de maniére asser l'égaire même si plus allaise sur Python que les deux autre</span>
+        </article>
+        <article class="info-card">
+          <h3>Cybersécurité</h3>
+          <p>Windows Server et Linux (Kali Linux, Debian, Ubuntu). DHCP TFTP Proxmox pfsense et encore d'autre</p>
+          <span class="tag">[Ton niveau / contexte]</span>
+        </article>
+        <article class="info-card">
+          <h3>Outils & environnements</h3>
+          <p>VirtualBox, VMware et Wazuh. </p>
+          
+        </article>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS : complète les intitulés exacts et ajoute les dates si tu les connais -->
+    <section class="section" id="certifications">
+      <div class="section-heading">
+        <p class="eyebrow">04 • MES CERTIFICATIONS</p>
+        <h2>Certifications & formations complémentaires</h2>
+        <p class="section-lead">Ces certifications valorisent les connaissances acquises en complément de ma formation.</p>
+      </div>
+      <div class="cards-grid">
+        <article class="info-card certification-card">
+          <span class="project-type">CYBERSÉCURITÉ</span>
+          <h3>MOOC de l’ANSSI</h3>
+          <p>Attestation obtenue à l’issue du MOOC de l’Agence nationale de la sécurité des systèmes d’information.</p>
+          <p><strong>Justificatif :</strong> Attestation de suivi / réussite</p>
+          <p><strong>Date d’obtention :</strong> [À compléter]</p>
+        </article>
+        <article class="info-card certification-card">
+          <span class="project-type">SYSTÈMES LINUX</span>
+          <h3>Formation Linux – Cisco Networking Academy</h3>
+          <p>Formation <strong>Linux Unhatched</strong> suivie sur la plateforme Cisco Networking Academy (NetAcad). <strong>Badge obtenu.</strong></p>
+          <p><strong>Intitulé exact du cours :</strong> s'avoir se servire de linux</p>
+          <p><strong>Attestation / badge obtenu :</strong> [À préciser si tu en as un]</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJETS INFORMATIQUES -->
+    <section class="section" id="projets">
+      <div class="section-heading">
+        <p class="eyebrow">05 • CE QUE J’AI RÉALISÉ</p>
+        <h2>Projets informatiques</h2>
+        <p class="section-lead">comme projets que j'ai réaliser par le passer de maniére personnel il y a la construction d'une borne d'arcade. l'ors d'un stage j'avait coder en html css une page web qui était une FAQ</p>
+      </div>
+      <div class="cards-grid">
+        <article class="info-card project-card">
+          <span class="project-type">PROJET BTS</span>
+          <h3>M2L</h3>
+          <p>le projet que n'es pas encore terminer a pour but l'instalation de toute une infrastructure réseau avec des vlan des serveur des parfeu et autre</p>
+          <p><strong>Ce que j’ai fait :</strong> sur le projet je me suis majoritairement occuper de l'instalation paramétrage des switch de niveau 3 instalation de téléphone IP et de quelque prosédure</p>
+          <p><strong>Outils :</strong> un navigateur word putty</p>
+          <p><strong>Résultat :</strong> comme dit présedament le projet n'est pas encore terminer mais l'axait a internet est opérationnelle les service dhcp aussi tout comme pl'ain d'autre chose</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROCEDURES INFORMATIQUES REALISEES EN BTS -->
+    <section class="section" id="procedures">
+      <div class="section-heading">
+        <p class="eyebrow">06 • MES RÉALISATIONS</p>
+        <h2>Procédures informatiques</h2>
+        <p class="section-lead">Répertorie les procédures réalisées pendant le BTS. Pour chacune : objectif, prérequis, étapes, captures d’écran et résultat.</p>
+      </div>
+      <div class="text-panel">
+        <ul class="procedure-list">
+          <li> — procédure sur la confuguration de DHCP <a href="C:\Users\celes\OneDrive\Bureau\Cours\BTS-SIO\portefolio_programer\procedure_DHCP.pdf">Consulter</a></li>
+          <li> — premiére procédure que j'ai rédiger <a href="C:\Users\celes\OneDrive\Bureau\Cours\BTS-SIO\portefolio_programer\procedure_changer_addresse_ip.docx">Consulter</a></li>
+          <li> — mise en place d'un serveur TFTP <a href="C:\Users\celes\OneDrive\Bureau\Cours\BTS-SIO\portefolio_programer\TFTP.pdf">Consulter</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PRESENTATION DU BTS SIO -->
+    <section class="section" id="formation">
+      <div class="section-heading">
+        <p class="eyebrow">07 • MA FORMATION</p>
+        <h2>Le BTS SIO en quelques mots</h2>
+      </div>
+      <div class="text-panel">
+        <p>le BTS SIO est un BTS orianter dans l'informatique dans le quelle on voit le fonctionnement d'un réseau le paramétré, on étudit aussi la Cybersécurité, au niveau des ensaignement on a de l'atelier professionnel de la culture générale du réseau de la cybersécuriter de l'anglais qui est ésansiéle dans le dommaine et de la culture économique juridique manageriale</p>
+        <p>l'option que j'ai chois c'est SISR solutions d’infrastructure, systèmes et réseaux qui est vraiment tourner vers l'aprantisage compréhension et mise en place de parc informatiques</p>
+        <a class="text-link" href="https://institutionsaintaspais.fr/formations/bts-services-informatiques-aux-organisations-option-slam-et-sisr/" target="_blank" rel="noopener">Consulter la page officiel du BTS SIO →</a>
+      </div>
+    </section>
+
+    <!-- DOCUMENTS : CV, RAPPORT DE STAGE, LETTRE DE MOTIVATION -->
+    <section class="section" id="documents">
+      <div class="section-heading">
+        <p class="eyebrow">08 • MES DOCUMENTS</p>
+        <h2>CV & documents utiles</h2>
+      </div>
+      <div class="cards-grid">
+        <article class="info-card document-card">
+          <div class="document-icon">CV</div>
+          <h3>Mon CV</h3>
+          <p>voici mon CV que vous pouvez consulter et télécharger</p>
+          <a class="button primary" href="Petit-Célestin.pdf" download>Télécharger mon CV</a>
+        </article>
+        <article class="info-card document-card">
+          <div class="document-icon">STAGE</div>
+          <h3>Rapport de stage – 1re année</h3>
+          <p>voici mon rapport de stage de ma premiére année de BTS SIO</p>
+          <a class="text-link" href="C:\Users\celes\OneDrive\Bureau\Cours\BTS-SIO\portefolio_programer\PETIT-Celestin-SIO1-rapport de stage.pdf" target="_blank" rel="noopener">Consulter le rapport →</a>
+        </article>
+        <article class="info-card document-card">
+          <div class="document-icon">LM</div>
+          <h3>Lettre de motivation</h3>
+          <p>Je souhaite poursuivre mon parcours dans l'informatique, avec un intérêt particulier pour les postes d'administrateur systèmes et réseaux ou de technicien informatique.</p>
+          <a class="text-link" href="celestin-petit.pdf" target="_blank" rel="noopener">Consulter la lettre →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- LIENS EXTERNES DEMANDES -->
+    <section class="section" id="liens">
+      <div class="section-heading">
+        <p class="eyebrow">09 • RESSOURCES</p>
+        <h2>Liens utiles</h2>
+      </div>
+      <div class="text-panel links-panel">
+        <a href="https://institutionsaintaspais.fr/formations/bts-services-informatiques-aux-organisations-option-slam-et-sisr/" target="_blank" rel="noopener">Consulter la page officiel du BTS SIO ↗</a>
+        <a href="https://institutionsaintaspais.fr/" target="_blank" rel="noopener">Campus Saint Aspais ↗</a>
+      </div>
+    </section>
+
+    <!-- CONTACT : ne publie que les coordonnées que tu souhaites rendre publiques -->
+    <section class="section contact-section" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">10 • ÉCHANGEONS</p>
+        <h2>Me contacter</h2>
+        <p class="section-lead">Vous souhaitez échanger avec moi au sujet d'une opportunité de stage ou de mes réalisations en systèmes et réseaux ?</p>
+      </div>
+      <div class="contact-details">
+        <p><span>Email</span><a href="mailto:[celestinm.petit@free.fr]">celestinm.petit@free.fr</a></p>
+        <p><span>Téléphone</span><a href="tel:+33769168257">0769168257</a></p>
+        <p><span>Localisation</span>Soignolles-en-Brie</p>
+        <p><span>LinkedIn / GitHub</span><a href="https://www.linkedin.com/in/c%C3%A9lestin-petit-4b29983a5/">mon LinkedIn ↗</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© [Année] Célestin Petit • Portfolio BTS SIO • Option SISR</p>
+    <a href="#accueil">Retour en haut ↑</a>
+  </footer>
 </body>
-
 </html>
